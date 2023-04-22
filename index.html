@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="table">
+
+            <div class="row fixedPrice selected">
+                <h4>Fixed price : 40,000 $</h4>
+            </div>
+
+            <div class="row fixedPrice">
+                <label for="EntryPrice" class="title"> add Entry price :
+                    <input type="number" pattern="[0-9]+" id="EntryPrice" min="25000" placeholder="above 25000" max="40000">
+                </label>
+            </div>
+            
+            <div class="row taxSituation">
+
+                <label for="tax1"> 9% rate
+                    <input value="9" type="radio" id="tax1" name="radioButton">
+                </label>
+
+                <label for="tax2"> 8% rate
+                    <input value="8" type="radio" id="tax2" name="radioButton">
+                </label>
+
+                <label for="tax3"> 7% rate
+                    <input value="7" type="radio" id="tax4" name="radioButton">
+                </label>
+            </div>
+
+            <div class="row additionalOptions">
+
+                <label for="opt1">
+                    <input value="1100" type="checkbox" id="opt1" name="checkboxButton"> first additional option : 1100$
+                </label>
+
+                <label for="opt2">
+                    <input  value="680" type="checkbox" id="opt2" name="checkboxButton">second additional option : 680$
+                </label>
+
+                <label for="opt3">
+                    <input  value="2320" type="checkbox" id="opt3" name="checkboxButton"> third additional option : 2320$
+                </label>
+            </div>
+
+            <div class="row selections">
+                <h4>installment plan :</h4>
+                <select name="selection" id="selction">
+                    <option value="12">12Mo</option>
+                    <option value="48">48Mo</option>
+                    <option value="72">72Mo</option>
+                </select>
+            </div>
+
+
+        </div>
+
+        <div class="ActionCheckoutSection">
+
+            <div class="innerDivC">
+                <div class="prices">
+                    <h4>pament per month : </h4>
+                    <h3 class="totalPrice"> ••• </h3>
+                </div>
+                <p>Lorem ipsum dolor sitt expedita possimus earum!</p>
+                <button class="checkoutButton">chekuot &#x2192;</button>
+            </div>
+        </div>
+
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+
+</html>
